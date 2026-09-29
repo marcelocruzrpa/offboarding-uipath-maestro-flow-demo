@@ -1,0 +1,90 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "connection",
+      "key": "3d35fe25-da38-4eec-9ec9-5245c7cf72e3",
+      "id": "connection3d35fe25-da38-4eec-9ec9-5245c7cf72e3",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "3d35fe25-da38-4eec-9ec9-5245c7cf72e3",
+          "isExpression": false,
+          "displayName": "uipath-atlassian-jira connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Offboarding issue created",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-atlassian-jira connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-atlassian-jira"
+      }
+    },
+    {
+      "resource": "connection",
+      "key": "8ed1c256-ed98-48ae-83a2-8540d604ec46",
+      "id": "connection8ed1c256-ed98-48ae-83a2-8540d604ec46",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "8ed1c256-ed98-48ae-83a2-8540d604ec46",
+          "isExpression": false,
+          "displayName": "uipath-microsoft-azureactivedirectory connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Get leaver account",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-microsoft-azureactivedirectory connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-microsoft-azureactivedirectory"
+      }
+    },
+    {
+      "resource": "EventTrigger",
+      "key": "3d35fe25-da38-4eec-9ec9-5245c7cf72e3_offboardingIssueCreated1",
+      "id": "EventTrigger3d35fe25-da38-4eec-9ec9-5245c7cf72e3_offboardingIssueCreated1",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "3d35fe25-da38-4eec-9ec9-5245c7cf72e3",
+          "isExpression": false
+        },
+        "EntryPointUniqueId": {
+          "defaultValue": "25047c1f-36fc-487a-aa23-14a53d43ce15",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "Connector": "uipath-atlassian-jira",
+        "ActivityName": "Offboarding issue created",
+        "BindingsVersion": "2.2",
+        "ObjectName": "curated_get_issue",
+        "Operation": "ISSUE_CREATED",
+        "FilterExpression": ""
+      }
+    },
+    {
+      "resource": "Property",
+      "key": "ISSUE_CREATED",
+      "id": "Property_offboardingIssueCreated1",
+      "value": {
+        "project": {
+          "defaultValue": "KAN",
+          "isExpression": false
+        },
+        "issuetype": {
+          "defaultValue": "10001",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "TriggerCreateParameters": "project,issuetype",
+        "DebugQueryParameters": "project,issuetype",
+        "ActivityName": "Offboarding issue created",
+        "BindingsVersion": "2.2",
+        "ObjectName": "curated_get_issue",
+        "ParentResourceKey": "EventTrigger.3d35fe25-da38-4eec-9ec9-5245c7cf72e3_offboardingIssueCreated1"
+      }
+    }
+  ]
+}

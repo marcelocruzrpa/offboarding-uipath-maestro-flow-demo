@@ -1,0 +1,23 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "EmployeeOffboarding",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "43622782-e9a0-491f-8064-ced05db928d7",
+    "isOverridable": true,
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "files": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "EmployeeOffboarding"
+    },
+    "locks": [],
+    "key": "5fe83ddb-207a-46fc-ba49-b1e444e28ff2"
+  }
+}

@@ -1,0 +1,18 @@
+# Per-user Studio / debug state (contains tenant and folder identifiers)
+.local/
+userProfile/
+
+# Build / pack output
+out/
+*.nupkg
+*.zip
+*.uis
+
+# Tool state
+.omc/
+.claude/settings.local.json
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
