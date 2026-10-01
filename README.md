@@ -15,6 +15,10 @@ When HR opens a Jira issue, the flow:
 It was built as a showcase. One run can be recorded in about 2–3 minutes and is visible live in the
 Maestro run view, the Jira issue, and the Entra admin center.
 
+### Watch it being built
+
+[![Buildcast EP1: building this flow with UiPath Maestro Flow and Claude Code Skills](https://img.youtube.com/vi/_oOTKKJmhHE/maxresdefault.jpg)](https://www.youtube.com/watch?v=_oOTKKJmhHE)
+
 ## How it works
 
 | Stage | What happens | Systems |
